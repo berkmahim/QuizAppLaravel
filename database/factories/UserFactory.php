@@ -24,6 +24,7 @@ class UserFactory extends Factory
      */
     public function definition()
     {
+        User::insert([]);
         return [
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
